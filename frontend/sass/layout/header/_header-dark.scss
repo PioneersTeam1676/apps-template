@@ -1,0 +1,104 @@
+//
+// Header
+//
+
+[data-kt-app-layout="dark-header"] {
+    .app-header {
+        background-color: $app-dark-header-bg-color;
+        border-bottom: 1px solid var(--kt-app-dark-header-border-color);  
+
+        .app-header-primary {
+            border-bottom: 1px solid var(--kt-app-dark-header-border-color);   
+            background-color: v$app-dark-header-bg-color;
+        } 
+
+        .app-header-secondary {
+            background-color: $app-dark-header-bg-color;
+        } 
+    }
+
+    .app-navbar {
+        .btn-custom {    
+            @include button-custom-variant(
+                $color: $app-dark-header-btn-custom-color, 
+                $icon-color: $app-dark-header-btn-custom-color, 
+                $border-color: $app-dark-header-btn-custom-border-color, 
+                $bg-color: var(--kt-app-dark-header-btn-custom-bg-color), 
+
+                $color-active: null, 
+                $icon-color-active: $primary,  
+                $border-color-active: null, 
+                $bg-color-active: null
+            );
+        } 
+    }   
+
+    .header-search {
+        form {
+            .svg-icon {
+                color: $app-dark-header-search-icon-color;
+            }
+
+            > .form-control {
+                color: $app-dark-header-search-input-color;
+                border: 1px solid var(--kt-app-dark-header-search-input-border-color);
+                background-color: transparent;
+                @include placeholder($app-dark-header-search-input-placeholder-color);
+            }
+        }
+    }
+
+    // Desktop mode
+    @include media-breakpoint-up(lg) {
+        .header-menu {        
+            .menu {
+                > .menu-item {
+                    @include menu-link-default-state( 
+                        $title-color: $app-dark-header-menu-link-color, 
+                        $icon-color: $app-dark-header-menu-icon-color, 
+                        $bullet-color: $app-dark-header-menu-bullet-color, 
+                        $arrow-color: $app-dark-header-menu-arrow-color, 
+                        $bg-color: null, 
+                        $all-links: false
+                    );
+
+                    @include menu-link-hover-state( 
+                        $title-color: $app-dark-header-menu-link-color-hover, 
+                        $icon-color: $app-dark-header-menu-icon-color-hover, 
+                        $bullet-color: $app-dark-header-menu-bullet-color-hover, 
+                        $arrow-color: $app-dark-header-menu-arrow-color-hover, 
+                        $bg-color: null, 
+                        $all-links: false
+                    );
+
+                    @include menu-link-here-state( 
+                        $title-color: $app-dark-header-menu-link-color-hover, 
+                        $icon-color: $app-dark-header-menu-icon-color-hover, 
+                        $bullet-color: $app-dark-header-menu-bullet-color-hover, 
+                        $arrow-color: $app-dark-header-menu-arrow-color-hover, 
+                        $bg-color: var(--kt-app-dark-header-menu-link-bg-color-active), 
+                        $all-links: false
+                    );
+
+                    @include menu-link-show-state( 
+                        $title-color: $app-dark-header-menu-link-color-hover, 
+                        $icon-color: $app-dark-header-menu-icon-color-hover, 
+                        $bullet-color: $app-dark-header-menu-bullet-color-hover, 
+                        $arrow-color: $app-dark-header-menu-arrow-color-hover, 
+                        $bg-color: null, 
+                        $all-links: false
+                    );
+
+                    @include menu-link-active-state( 
+                        $title-color: $app-dark-header-menu-link-color-hover, 
+                        $icon-color: $primary-inverse, 
+                        $bullet-color: $primary-inverse, 
+                        $arrow-color: $primary-inverse, 
+                        $bg-color: var(--kt-app-dark-header-menu-link-bg-color-active), 
+                        $all-links: false
+                    );
+                } 
+            }    
+        } 
+    }
+}

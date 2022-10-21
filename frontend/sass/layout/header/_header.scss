@@ -1,0 +1,33 @@
+//
+// Header
+//
+
+[data-kt-app-layout="light-header"],
+[data-kt-app-layout="dark-header"] {
+    // Desktop mode
+    @include media-breakpoint-up(lg) {
+        .header-menu {
+            .menu {
+                > .menu-item {
+                    margin: 0;
+                    
+                    > .menu-link {
+                        padding: 12px 21px;   
+
+                        .menu-title {
+                            font-size: 1.1rem; 
+                            font-weight: $font-weight-bold;
+                        }                                             
+                    }
+                }
+            }
+        } 
+    }
+
+    // Tablet & mobile modes
+    @include media-breakpoint-down(lg) {
+        .app-header-primary {
+            border-bottom: 0 !important;    
+        }
+    }
+}

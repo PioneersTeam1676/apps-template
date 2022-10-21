@@ -1,0 +1,54 @@
+//
+// Root
+//
+
+[data-kt-app-layout="light-sidebar"] {
+    &.app-default {
+        background-color: var(--kt-app-light-sidebar-page-bg-color);     
+    }
+}
+
+[data-kt-app-layout="dark-sidebar"] {
+    &.app-default {
+        background-color: var(--kt-app-dark-sidebar-page-bg-color);    
+    }
+}
+
+[data-kt-app-layout="light-header"] {
+    &.app-default {
+        background-color: var(--kt-app-light-header-page-bg-color);    
+    }
+
+    .card:not(.bg-gray-200) {
+        background-color: var(--kt-app-light-header-page-card-bg-color);
+        border: 1px dashed var(--kt-app-light-header-page-card-border-color);
+    } 
+}
+
+[data-kt-app-layout="dark-header"] {
+    &.app-default {
+        background-color: var(--kt-app-dark-header-page-bg-color);    
+    }
+
+    .card:not(.bg-gray-200) {
+        background-color: var(--kt-app-dark-header-page-card-bg-color);
+        border: 1px dashed var(--kt-app-dark-header-page-card-border-color);
+    }
+}
+
+[data-kt-app-layout="mini-sidebar"] {
+    &.app-default {
+        background-color: var(--kt-app-mini-sidebar-page-bg-color);  
+    }  
+}
+
+[data-kt-app-layout="overlay"] {
+    &.app-default {
+        background-color: var(--kt-app-overlay-page-bg-color);    
+    }    
+
+    .card:not(.bg-gray-200) {
+        background-color: var(--kt-app-overlay-page-card-bg-color);
+        border: 1px dashed var(--kt-app-overlay-page-card-border-color);
+    }
+}

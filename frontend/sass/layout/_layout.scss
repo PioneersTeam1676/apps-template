@@ -1,0 +1,27 @@
+//
+// Layout
+//
+
+// General for all layouts
+@import "root";
+@import "reboot";
+@import "content";
+
+// Light & dark sidebar layouts(not mandatory when other layout is used)
+@import "sidebar/_header";
+@import "sidebar/_sidebar";
+@import "sidebar/_sidebar-light";
+@import "sidebar/_sidebar-dark";
+
+// Light header & dark header layouts(not mandatory when other layout is used)
+@import "header/_header";
+@import "header/_header-light";
+@import "header/_header-dark"; 
+
+// Mini sidebar layout(not mandatory when other layout is used)
+@import "mini-sidebar/_sidebar";
+@import "mini-sidebar/_header";
+
+// Overlay layout(not mandatory when other layout is used)
+@import "overlay/_sidebar";
+@import "overlay/_header";

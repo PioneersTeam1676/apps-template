@@ -1,0 +1,285 @@
+//
+// Root
+//
+
+// Light mode
+@include theme-light() {
+    // Sidebar
+    --kt-app-sidebar-logo-icon-custom-hover-color: #{$app-sidebar-logo-icon-custom-hover-color};
+
+    // Light sidebar
+    --kt-app-light-sidebar-page-bg-color: #{$app-light-sidebar-page-bg-color};    
+    --kt-app-light-sidebar-bg-color: #{$app-light-sidebar-bg-color};
+
+    --kt-app-light-sidebar-logo-icon-custom-color: #{$app-light-sidebar-logo-icon-custom-color};
+
+    --kt-app-light-sidebar-scrollbar-color: #{$app-light-sidebar-scrollbar-color};
+    --kt-app-light-sidebar-scrollbar-color-hover: #{$app-light-sidebar-scrollbar-color-hover};
+    
+    --kt-app-light-sidebar-separator-color: #{$app-light-sidebar-separator-color};
+    
+    --kt-app-light-sidebar-btn-custom-color: #{$app-light-sidebar-btn-custom-color};
+    --kt-app-light-sidebar-btn-custom-bg-color: #{$app-light-sidebar-btn-custom-bg-color};
+    --kt-app-light-sidebar-btn-custom-bg-color-active: #{$app-light-sidebar-btn-custom-bg-color-active};
+    
+    --kt-app-light-sidebar-select-custom-color: #{$app-light-sidebar-select-custom-color};
+    --kt-app-light-sidebar-select-custom-bg-color: #{$app-light-sidebar-select-custom-bg-color};
+    
+    --kt-app-light-sidebar-menu-heading-color: #{$app-light-sidebar-menu-heading-color};
+    --kt-app-light-sidebar-menu-root-link-color: #{$app-light-sidebar-menu-root-link-color};
+    --kt-app-light-sidebar-menu-root-icon-color: #{$app-light-sidebar-menu-root-icon-color};
+    --kt-app-light-sidebar-menu-root-bullet-color: #{$app-light-sidebar-menu-root-bullet-color};
+    --kt-app-light-sidebar-menu-root-arrow-color: #{$app-light-sidebar-menu-root-arrow-color};
+    --kt-app-light-sidebar-menu-root-link-color-hover: #{$app-light-sidebar-menu-root-link-color-hover};
+    --kt-app-light-sidebar-menu-root-icon-color-hover: #{$app-light-sidebar-menu-root-icon-color-hover};
+    --kt-app-light-sidebar-menu-root-bullet-color-hover: #{$app-light-sidebar-menu-root-bullet-color-hover};
+    --kt-app-light-sidebar-menu-root-arrow-color-hover: #{$app-light-sidebar-menu-root-arrow-color-hover};
+    --kt-app-light-sidebar-menu-link-color: #{$app-light-sidebar-menu-link-color};
+    --kt-app-light-sidebar-menu-icon-color: #{$app-light-sidebar-menu-icon-color};
+    --kt-app-light-sidebar-menu-bullet-color: #{$app-light-sidebar-menu-bullet-color};
+    --kt-app-light-sidebar-menu-arrow-color: #{$app-light-sidebar-menu-arrow-color};
+    --kt-app-light-sidebar-menu-link-color-hover: #{$app-light-sidebar-menu-link-color-hover};
+    --kt-app-light-sidebar-menu-icon-color-hover: #{$app-light-sidebar-menu-icon-color-hover};
+    --kt-app-light-sidebar-menu-bullet-color: #{$app-light-sidebar-menu-bullet-color};
+    --kt-app-light-sidebar-menu-arrow-color-hover: #{$app-light-sidebar-menu-arrow-color-hover};
+
+    --kt-app-light-sidebar-header-search-icon-color: #{$app-light-sidebar-header-search-icon-color};
+    --kt-app-light-sidebar-header-search-input-color: #{$app-light-sidebar-header-search-input-color};
+    --kt-app-light-sidebar-header-search-input-border-color: #{$app-light-sidebar-header-search-input-border-color};
+    --kt-app-light-sidebar-header-search-input-placeholder-color: #{$app-light-sidebar-header-search-input-placeholder-color};
+    
+    --kt-app-light-sidebar-header-navbar-btn-custom-color: #{$app-light-sidebar-header-navbar-btn-custom-color};
+    --kt-app-light-sidebar-header-navbar-btn-custom-icon-color: #{$app-light-sidebar-header-navbar-btn-custom-icon-color};
+    --kt-app-light-sidebar-header-navbar-btn-custom-border-color: #{$app-light-sidebar-header-navbar-btn-custom-border-color};
+
+    // Dark sidebar
+    --kt-app-dark-sidebar-page-bg-color: #{$app-dark-sidebar-page-bg-color};  
+    
+    --kt-app-dark-sidebar-bg-color: #{$app-dark-sidebar-bg-color};
+    
+    --kt-app-dark-sidebar-scrollbar-color: #{$app-dark-sidebar-scrollbar-color};
+    --kt-app-dark-sidebar-scrollbar-color-hover: #{$app-dark-sidebar-scrollbar-color-hover};
+
+    --kt-app-dark-sidebar-separator-color: #{$app-dark-sidebar-separator-color};
+
+    --kt-app-dark-sidebar-btn-custom-color: #{$app-dark-sidebar-btn-custom-color};
+    --kt-app-dark-sidebar-btn-custom-bg-color: #{$app-dark-sidebar-btn-custom-bg-color};
+    --kt-app-dark-sidebar-btn-custom-bg-color-active: #{$app-dark-sidebar-btn-custom-bg-color-active};
+    
+    --kt-app-dark-sidebar-select-custom-color: #{$app-dark-sidebar-select-custom-color};
+    --kt-app-dark-sidebar-select-custom-bg-color: #{$app-dark-sidebar-select-custom-bg-color};
+    
+    --kt-app-dark-sidebar-header-search-input-border-color: #{$app-dark-sidebar-header-search-input-border-color};
+
+    --kt-app-dark-sidebar-header-navbar-btn-custom-border-color: #{$app-dark-sidebar-header-navbar-btn-custom-border-color};
+
+
+    // Light header
+    --kt-app-light-header-page-bg-color: #{$app-light-header-page-bg-color};  
+    --kt-app-light-header-page-card-bg-color: #{$app-light-header-page-card-bg-color};  
+    --kt-app-light-header-page-card-border-color: #{$app-light-header-page-card-border-color};  
+
+    --kt-app-light-header-toolbar-bg-color: #{$app-light-header-toolbar-bg-color}; 
+
+    --kt-app-light-header-bg-color: #{$app-light-header-bg-color}; 
+    
+    --kt-app-light-header-border-color: #{$app-light-header-border-color}; 
+    
+    --kt-app-light-header-btn-custom-color: #{$app-light-header-btn-custom-color}; 
+    --kt-app-light-header-btn-custom-bg-color: #{$app-light-header-btn-custom-bg-color}; 
+    --kt-app-light-header-btn-custom-border-color: #{$app-light-header-btn-custom-border-color}; 
+    
+    --kt-app-light-header-search-icon-color: #{$app-light-header-search-icon-color}; 
+    --kt-app-light-header-search-input-color: #{$app-light-header-search-input-color}; 
+    --kt-app-light-header-search-input-border-color: #{$app-light-header-search-input-border-color}; 
+    --kt-app-light-header-search-input-bg-color: #{$app-light-header-search-input-bg-color}; 
+    --kt-app-light-header-search-input-placeholder-color: #{$app-light-header-search-input-placeholder-color}; 
+    
+    --kt-app-light-header-menu-link-bg-color-active: #{$app-light-header-menu-link-bg-color-active}; 
+    --kt-app-light-header-menu-link-color: #{$app-light-header-menu-link-color}; 
+    --kt-app-light-header-menu-icon-color: #{$app-light-header-menu-icon-color}; 
+    --kt-app-light-header-menu-bullet-color: #{$app-light-header-menu-bullet-color}; 
+    --kt-app-light-header-menu-arrow-color: #{$app-light-header-menu-arrow-color}; 
+    --kt-app-light-header-menu-link-color-hover: #{$app-light-header-menu-link-color-hover}; 
+    --kt-app-light-header-menu-icon-color-hover: #{$app-light-header-menu-icon-color-hover};     
+    --kt-app-light-header-menu-bullet-color-hover: #{$app-light-header-menu-bullet-color-hover};     
+    --kt-app-light-header-menu-arrow-color-hover: #{$app-light-header-menu-arrow-color-hover};     
+    --kt-app-light-header-menu-bullet-color-active: #{$app-light-header-menu-bullet-color-active};     
+
+    // Dark header
+    --kt-app-dark-header-page-bg-color: #{$app-dark-header-page-bg-color};  
+    --kt-app-dark-header-page-card-bg-color: #{$app-dark-header-page-card-bg-color};  
+    --kt-app-dark-header-page-card-border-color: #{$app-dark-header-page-card-border-color};  
+
+    --kt-app-dark-header-border-color: #{$app-dark-header-border-color};
+    --kt-app-dark-header-toolbar-bg-color: #{$app-dark-header-toolbar-bg-color};
+
+    --kt-app-dark-header-btn-custom-bg-color: #{$app-dark-header-btn-custom-bg-color};
+
+    --kt-app-dark-header-search-input-border-color: #{$app-dark-header-search-input-border-color};
+    --kt-app-dark-header-search-input-bg-color: #{$app-dark-header-search-input-bg-color};
+
+    --kt-app-dark-header-menu-link-bg-color-active: #{$app-dark-header-menu-link-bg-color-active};
+
+    // Mini sidebar
+    --kt-app-mini-sidebar-page-bg-color: #{$app-mini-sidebar-page-bg-color};  
+    --kt-app-mini-sidebar-menu-bg-color: #{$app-mini-sidebar-menu-bg-color};
+
+    --kt-app-mini-sidebar-header-search-input-border-color: #{$app-mini-sidebar-header-search-input-border-color};
+    --kt-app-mini-sidebar-header-search-input-bg-color: #{$app-mini-sidebar-header-search-input-bg-color};
+
+    --kt-app-mini-sidebar-header-btn-custom-border-color: #{$app-mini-sidebar-header-btn-custom-border-color};
+    --kt-app-mini-sidebar-header-btn-custom-border-color-active: #{$app-mini-sidebar-header-btn-custom-border-color-active};
+
+    // Overlay
+    --kt-app-overlay-page-bg-color: #{$app-overlay-page-bg-color};  
+    --kt-app-overlay-page-card-bg-color: #{$app-overlay-page-card-bg-color};  
+    --kt-app-overlay-page-card-border-color: #{$app-overlay-page-card-border-color};  
+
+    --kt-app-overlay-sidebar-bg-color: #{$app-overlay-sidebar-bg-color};
+
+    --kt-app-overlay-sidebar-menu-shadow-color: #{$app-overlay-sidebar-menu-shadow-color};
+    --kt-app-overlay-sidebar-menu-icon-color: #{$app-overlay-sidebar-menu-icon-color};
+    --kt-app-overlay-sidebar-menu-link-bg-color: #{$app-overlay-sidebar-menu-link-bg-color};
+}
+
+// Dark mode
+@include theme-dark() {
+	// Sidebar
+    --kt-app-sidebar-logo-icon-custom-hover-color: #{$app-sidebar-logo-icon-custom-hover-color-dark};
+
+    // Light sidebar
+    --kt-app-light-sidebar-page-bg-color: #{$app-light-sidebar-page-bg-color-dark};    
+    --kt-app-light-sidebar-bg-color: #{$app-light-sidebar-bg-color-dark};
+
+    --kt-app-light-sidebar-logo-icon-custom-color: #{$app-light-sidebar-logo-icon-custom-color-dark};
+
+    --kt-app-light-sidebar-scrollbar-color: #{$app-light-sidebar-scrollbar-color-dark};
+    --kt-app-light-sidebar-scrollbar-color-hover: #{$app-light-sidebar-scrollbar-color-hover-dark};
+    
+    --kt-app-light-sidebar-separator-color: #{$app-light-sidebar-separator-color-dark};
+    
+    --kt-app-light-sidebar-btn-custom-color: #{$app-light-sidebar-btn-custom-color-dark};
+    --kt-app-light-sidebar-btn-custom-bg-color: #{$app-light-sidebar-btn-custom-bg-color-dark};
+    --kt-app-light-sidebar-btn-custom-bg-color-active: #{$app-light-sidebar-btn-custom-bg-color-active-dark};
+    
+    --kt-app-light-sidebar-select-custom-color: #{$app-light-sidebar-select-custom-color-dark};
+    --kt-app-light-sidebar-select-custom-bg-color: #{$app-light-sidebar-select-custom-bg-color-dark};
+    
+    --kt-app-light-sidebar-menu-heading-color: #{$app-light-sidebar-menu-heading-color-dark};
+    --kt-app-light-sidebar-menu-root-link-color: #{$app-light-sidebar-menu-root-link-color-dark};
+    --kt-app-light-sidebar-menu-root-icon-color: #{$app-light-sidebar-menu-root-icon-color-dark};
+    --kt-app-light-sidebar-menu-root-bullet-color: #{$app-light-sidebar-menu-root-bullet-color-dark};
+    --kt-app-light-sidebar-menu-root-arrow-color: #{$app-light-sidebar-menu-root-arrow-color-dark};
+    --kt-app-light-sidebar-menu-root-link-color-hover: #{$app-light-sidebar-menu-root-link-color-hover-dark};
+    --kt-app-light-sidebar-menu-root-icon-color-hover: #{$app-light-sidebar-menu-root-icon-color-hover-dark};
+    --kt-app-light-sidebar-menu-root-bullet-color-hover: #{$app-light-sidebar-menu-root-bullet-color-hover-dark};
+    --kt-app-light-sidebar-menu-root-arrow-color-hover: #{$app-light-sidebar-menu-root-arrow-color-hover-dark};
+    --kt-app-light-sidebar-menu-link-color: #{$app-light-sidebar-menu-link-color-dark};
+    --kt-app-light-sidebar-menu-icon-color: #{$app-light-sidebar-menu-icon-color-dark};
+    --kt-app-light-sidebar-menu-bullet-color: #{$app-light-sidebar-menu-bullet-color-dark};
+    --kt-app-light-sidebar-menu-arrow-color: #{$app-light-sidebar-menu-arrow-color-dark};
+    --kt-app-light-sidebar-menu-link-color-hover: #{$app-light-sidebar-menu-link-color-hover-dark};
+    --kt-app-light-sidebar-menu-icon-color-hover: #{$app-light-sidebar-menu-icon-color-hover-dark};
+    --kt-app-light-sidebar-menu-bullet-color: #{$app-light-sidebar-menu-bullet-color-dark};
+    --kt-app-light-sidebar-menu-arrow-color-hover: #{$app-light-sidebar-menu-arrow-color-hover-dark};
+
+    --kt-app-light-sidebar-header-search-icon-color: #{$app-light-sidebar-header-search-icon-color-dark};
+    --kt-app-light-sidebar-header-search-input-color: #{$app-light-sidebar-header-search-input-color-dark};
+    --kt-app-light-sidebar-header-search-input-border-color: #{$app-light-sidebar-header-search-input-border-color-dark};
+    --kt-app-light-sidebar-header-search-input-placeholder-color: #{$app-light-sidebar-header-search-input-placeholder-color-dark};
+    
+    --kt-app-light-sidebar-header-navbar-btn-custom-color: #{$app-light-sidebar-header-navbar-btn-custom-color-dark};
+    --kt-app-light-sidebar-header-navbar-btn-custom-icon-color: #{$app-light-sidebar-header-navbar-btn-custom-icon-color-dark};
+    --kt-app-light-sidebar-header-navbar-btn-custom-border-color: #{$app-light-sidebar-header-navbar-btn-custom-border-color-dark};
+
+    // Dark sidebar
+    --kt-app-dark-sidebar-page-bg-color: #{$app-dark-sidebar-page-bg-color-dark};  
+    
+    --kt-app-dark-sidebar-bg-color: #{$app-dark-sidebar-bg-color-dark};
+    
+    --kt-app-dark-sidebar-scrollbar-color: #{$app-dark-sidebar-scrollbar-color-dark};
+    --kt-app-dark-sidebar-scrollbar-color-hover: #{$app-dark-sidebar-scrollbar-color-hover-dark};
+
+    --kt-app-dark-sidebar-separator-color: #{$app-dark-sidebar-separator-color-dark};
+
+    --kt-app-dark-sidebar-btn-custom-color: #{$app-dark-sidebar-btn-custom-color-dark};
+    --kt-app-dark-sidebar-btn-custom-bg-color: #{$app-dark-sidebar-btn-custom-bg-color-dark};
+    --kt-app-dark-sidebar-btn-custom-bg-color-active: #{$app-dark-sidebar-btn-custom-bg-color-active-dark};
+    
+    --kt-app-dark-sidebar-select-custom-color: #{$app-dark-sidebar-select-custom-color-dark};
+    --kt-app-dark-sidebar-select-custom-bg-color: #{$app-dark-sidebar-select-custom-bg-color-dark};
+    
+    --kt-app-dark-sidebar-header-search-input-border-color: #{$app-dark-sidebar-header-search-input-border-color-dark};
+
+    --kt-app-dark-sidebar-header-navbar-btn-custom-border-color: #{$app-dark-sidebar-header-navbar-btn-custom-border-color}-dark;
+
+
+    // Light header
+    --kt-app-light-header-page-bg-color: #{$app-light-header-page-bg-color-dark};  
+    --kt-app-light-header-page-card-bg-color: #{$app-light-header-page-card-bg-color-dark};  
+    --kt-app-light-header-page-card-border-color: #{$app-light-header-page-card-border-color-dark};  
+
+    --kt-app-light-header-toolbar-bg-color: #{$app-light-header-toolbar-bg-color-dark}; 
+
+    --kt-app-light-header-bg-color: #{$app-light-header-bg-color-dark}; 
+    
+    --kt-app-light-header-border-color: #{$app-light-header-border-color-dark}; 
+    
+    --kt-app-light-header-btn-custom-color: #{$app-light-header-btn-custom-color-dark}; 
+    --kt-app-light-header-btn-custom-bg-color: #{$app-light-header-btn-custom-bg-color-dark}; 
+    --kt-app-light-header-btn-custom-border-color: #{$app-light-header-btn-custom-border-color-dark}; 
+    
+    --kt-app-light-header-search-icon-color: #{$app-light-header-search-icon-color-dark}; 
+    --kt-app-light-header-search-input-color: #{$app-light-header-search-input-color-dark}; 
+    --kt-app-light-header-search-input-border-color: #{$app-light-header-search-input-border-color-dark}; 
+    --kt-app-light-header-search-input-bg-color: #{$app-light-header-search-input-bg-color-dark}; 
+    --kt-app-light-header-search-input-placeholder-color: #{$app-light-header-search-input-placeholder-color-dark}; 
+    
+    --kt-app-light-header-menu-link-bg-color-active: #{$app-light-header-menu-link-bg-color-active-dark}; 
+    --kt-app-light-header-menu-link-color: #{$app-light-header-menu-link-color-dark}; 
+    --kt-app-light-header-menu-icon-color: #{$app-light-header-menu-icon-color-dark}; 
+    --kt-app-light-header-menu-bullet-color: #{$app-light-header-menu-bullet-color-dark}; 
+    --kt-app-light-header-menu-arrow-color: #{$app-light-header-menu-arrow-color-dark}; 
+    --kt-app-light-header-menu-link-color-hover: #{$app-light-header-menu-link-color-hover-dark}; 
+    --kt-app-light-header-menu-icon-color-hover: #{$app-light-header-menu-icon-color-hover-dark};     
+    --kt-app-light-header-menu-bullet-color-hover: #{$app-light-header-menu-bullet-color-hover-dark};     
+    --kt-app-light-header-menu-arrow-color-hover: #{$app-light-header-menu-arrow-color-hover-dark};     
+    --kt-app-light-header-menu-bullet-color-active: #{$app-light-header-menu-bullet-color-active-dark};     
+
+    // Dark header
+    --kt-app-dark-header-page-bg-color: #{$app-dark-header-page-bg-color-dark};  
+    --kt-app-dark-header-page-card-bg-color: #{$app-dark-header-page-card-bg-color-dark};  
+    --kt-app-dark-header-page-card-border-color: #{$app-dark-header-page-card-border-color-dark};  
+
+    --kt-app-dark-header-border-color: #{$app-dark-header-border-color-dark};
+    --kt-app-dark-header-toolbar-bg-color: #{$app-dark-header-toolbar-bg-color-dark};
+
+    --kt-app-dark-header-btn-custom-bg-color: #{$app-dark-header-btn-custom-bg-color-dark};
+
+    --kt-app-dark-header-search-input-border-color: #{$app-dark-header-search-input-border-color-dark};
+    --kt-app-dark-header-search-input-bg-color: #{$app-dark-header-search-input-bg-color-dark};
+
+    --kt-app-dark-header-menu-link-bg-color-active: #{$app-dark-header-menu-link-bg-color-active-dark};
+
+    // Mini sidebar
+    --kt-app-mini-sidebar-page-bg-color: #{$app-mini-sidebar-page-bg-color-dark};  
+    --kt-app-mini-sidebar-menu-bg-color: #{$app-mini-sidebar-menu-bg-color-dark};
+
+    --kt-app-mini-sidebar-header-search-input-border-color: #{$app-mini-sidebar-header-search-input-border-color-dark};
+    --kt-app-mini-sidebar-header-search-input-bg-color: #{$app-mini-sidebar-header-search-input-bg-color-dark};
+
+    --kt-app-mini-sidebar-header-btn-custom-border-color: #{$app-mini-sidebar-header-btn-custom-border-color-dark};
+    --kt-app-mini-sidebar-header-btn-custom-border-color-active: #{$app-mini-sidebar-header-btn-custom-border-color-active-dark};
+
+    // Overlay
+    --kt-app-overlay-page-bg-color: #{$app-overlay-page-bg-color-dark};  
+    --kt-app-overlay-page-card-bg-color: #{$app-overlay-page-card-bg-color-dark};  
+    --kt-app-overlay-page-card-border-color: #{$app-overlay-page-card-border-color-dark};  
+
+    --kt-app-overlay-sidebar-bg-color: #{$app-overlay-sidebar-bg-color-dark};
+
+    --kt-app-overlay-sidebar-menu-shadow-color: #{$app-overlay-sidebar-menu-shadow-color-dark};
+    --kt-app-overlay-sidebar-menu-icon-color: #{$app-overlay-sidebar-menu-icon-color-dark};
+    --kt-app-overlay-sidebar-menu-link-bg-color: #{$app-overlay-sidebar-menu-link-bg-color-dark};
+}

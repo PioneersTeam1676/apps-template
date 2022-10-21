@@ -1,0 +1,185 @@
+//
+// Sidebar
+//
+
+[data-kt-app-layout="dark-sidebar"] {
+    .app-sidebar {
+        background-color: var(--kt-app-dark-sidebar-bg-color);
+
+        .hover-scroll-overlay-y {        
+            @include scrollbar-color($app-dark-sidebar-scrollbar-color, $app-dark-sidebar-scrollbar-color-hover);
+        }
+
+        .separator {
+            border-bottom: 1px dashed $app-dark-sidebar-separator-color;
+        }
+    }    
+
+    .app-sidebar-toolbar {
+        .btn-custom {
+            @include button-custom-variant(
+                $color: null, 
+                $icon-color: var(--kt-app-dark-sidebar-btn-custom-color), 
+                $border-color: null, 
+                $bg-color: var(--kt-app-dark-sidebar-btn-custom-bg-color), 
+                $color-active: null, 
+                $icon-color-active: $app-dark-sidebar-btn-custom-color-active, 
+                $border-color-active: null, 
+                $bg-color-active: var(--kt-app-dark-sidebar-btn-custom-bg-color-active)
+            );          
+        }
+
+        .form-select {
+            border-color: transparent !important; 
+        }
+
+        .form-select-custom {
+            background-color: var(--kt-app-dark-sidebar-select-custom-bg-color);   
+            border-color: transparent;              
+
+            .select2-selection__rendered {
+                color: var(--kt-app-dark-sidebar-select-custom-color);                                     
+            }  
+        }         
+    }
+
+    .app-sidebar-user {
+        .app-sidebar-username {
+            color: $app-dark-sidebar-avatar-name-color !important;
+
+            &:hover {
+                color: $app-dark-sidebar-avatar-name-color-hover !important;
+            }
+        }
+
+        .app-sidebar-deckription {
+            color: $app-dark-sidebar-avatar-description-color !important; 
+        }
+
+        .btn-icon-custom-color {
+            svg {
+                color: $app-dark-sidebar-avatar-icon-custom-color;
+            }
+        }
+    }
+
+    .app-sidebar-menu {
+        .menu {
+            // Root links
+            > .menu-item {
+                .menu-heading {
+                    color: $app-dark-sidebar-menu-heading-color;
+                }
+
+                @include menu-link-default-state( 
+                    $title-color: $app-dark-sidebar-menu-root-link-color, 
+                    $icon-color: $app-dark-sidebar-menu-root-icon-color, 
+                    $bullet-color: $app-dark-sidebar-menu-root-bullet-color, 
+                    $arrow-color: $app-dark-sidebar-menu-root-arrow-color, 
+                    $bg-color: null, 
+                    $all-links: false
+                );
+
+                @include menu-link-hover-state( 
+                    $title-color: $app-dark-sidebar-menu-root-link-color-hover, 
+                    $icon-color: $app-dark-sidebar-menu-root-icon-color-hover, 
+                    $bullet-color: $app-dark-sidebar-menu-root-bullet-color-hover, 
+                    $arrow-color: $app-dark-sidebar-menu-root-arrow-color-hover, 
+                    $bg-color: null, 
+                    $all-links: false
+                );
+
+                @include menu-link-here-state( 
+                    $title-color:$app-dark-sidebar-menu-root-link-color-hover, 
+                    $icon-color: $app-dark-sidebar-menu-root-icon-color-hover, 
+                    $bullet-color: $app-dark-sidebar-menu-root-bullet-color-hover, 
+                    $arrow-color: $app-dark-sidebar-menu-root-arrow-color-hover, 
+                    $bg-color: null, 
+                    $all-links: false
+                );
+
+                @include menu-link-show-state( 
+                    $title-color: $app-dark-sidebar-menu-root-link-color-hover, 
+                    $icon-color: $app-dark-sidebar-menu-root-icon-color-hover, 
+                    $bullet-color: $app-dark-sidebar-menu-root-bullet-color-hover, 
+                    $arrow-color: $app-dark-sidebar-menu-root-arrow-color-hover, 
+                    $bg-color: null, 
+                    $all-links: false
+                );
+
+                @include menu-link-active-state( 
+                    $title-color: $primary-inverse, 
+                    $icon-color: $primary-inverse, 
+                    $bullet-color: $primary-inverse, 
+                    $arrow-color: $primary-inverse, 
+                    $bg-color: $danger, 
+                    $all-links: false
+                );
+            }
+
+            // Child links
+            > .menu-item {
+                .menu-item {
+                    @include menu-link-default-state( 
+                        $title-color: $app-dark-sidebar-menu-link-color, 
+                        $icon-color: $app-dark-sidebar-menu-icon-color, 
+                        $bullet-color: $app-dark-sidebar-menu-bullet-color, 
+                        $arrow-color: $app-dark-sidebar-menu-arrow-color, 
+                        $bg-color: null, 
+                        $all-links: true
+                    );
+
+                    @include menu-link-hover-state( 
+                        $title-color: $app-dark-sidebar-menu-link-color-hover, 
+                        $icon-color: $app-dark-sidebar-menu-icon-color-hover, 
+                        $bullet-color: $app-dark-sidebar-menu-bullet-color-hover, 
+                        $arrow-color: $app-dark-sidebar-menu-arrow-color-hover, 
+                        $bg-color: null, 
+                        $all-links: true
+                    );
+
+                    @include menu-link-here-state( 
+                        $title-color:$app-dark-sidebar-menu-link-color, 
+                        $icon-color: $app-dark-sidebar-menu-icon-color-hover, 
+                        $bullet-color: $app-dark-sidebar-menu-bullet-color-hover, 
+                        $arrow-color: $app-dark-sidebar-menu-arrow-color-hover, 
+                        $bg-color: null, 
+                        $all-links: true
+                    );
+
+                    @include menu-link-show-state( 
+                        $title-color: $app-dark-sidebar-menu-link-color, 
+                        $icon-color: $app-dark-sidebar-menu-icon-color-hover, 
+                        $bullet-color: $app-dark-sidebar-menu-bullet-color-hover, 
+                        $arrow-color: $app-dark-sidebar-menu-arrow-color-hover, 
+                        $bg-color: null, 
+                        $all-links: true
+                    );
+
+                    @include menu-link-active-state( 
+                        $title-color: $primary-inverse, 
+                        $icon-color: $primary-inverse, 
+                        $bullet-color: $primary-inverse, 
+                        $arrow-color: $primary-inverse, 
+                        $bg-color: $danger, 
+                        $all-links: true
+                    );
+                    
+                    > .menu-link {
+                        > .menu-title {                            
+                            color: $app-dark-sidebar-menu-link-sub-title-color;                            
+                        }
+                    }
+                }
+            }   
+        }       
+    }
+
+    .app-sidebar-logo {
+        .btn-icon-custom-color {
+            svg {
+                color: $app-dark-sidebar-logo-icon-custom-color;
+            }
+        }
+    }    
+}

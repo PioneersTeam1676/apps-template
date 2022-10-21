@@ -1,0 +1,92 @@
+//
+// Header
+//
+
+[data-kt-app-layout="overlay"] {
+    // General mode
+    .app-header {
+        background-color: $app-overlay-header-bg-color;
+    }
+
+    .header-search {
+        form {
+            .svg-icon {
+                color: $app-overlay-search-icon-color;
+            }
+
+            > .form-control {
+                color: $app-overlay-search-input-color;
+                border: 1px solid $app-overlay-search-input-border-color;
+                background-color: transparent;
+                @include placeholder($app-overlay-search-input-placeholder-color);
+            }
+        }
+    }     
+
+    .app-navbar {
+        .btn.btn-custom {
+            @include button-custom-variant(
+                $color: $app-overlay-btn-custom-color, 
+                $icon-color: $app-overlay-btn-custom-color, 
+                $border-color: $app-overlay-btn-custom-border-color,
+                $bg-color: transparent,
+                
+                $color-active: $app-overlay-btn-custom-color-active, 
+                $icon-color-active: $app-overlay-btn-custom-color-active,  
+                $border-color-active: null, 
+                $bg-color-active: null
+            );
+        } 
+    }
+
+    // Desktop mode
+    @include media-breakpoint-up(lg) {
+        --kt-app-header-height: 240px;
+
+        .page-title {
+            .page-heading {
+                color: $app-overlay-page-title-heading-color !important;
+                font-size: 1.85rem !important; 
+            }
+
+            .page-desc {
+                color: $app-overlay-page-title-desc-color !important;
+            }        
+
+            .breadcrumb {
+                .breadcrumb-item {
+                    color: $app-overlay-page-title-breadcrumb-color !important;
+                }
+
+                .breadcrumb-link {
+                    color: $app-overlay-page-title-breadcrumb-color !important;
+                    
+                    &:hover {
+                        color: $app-overlay-page-title-breadcrumb-color-hover !important;
+                    }
+                }
+
+                .bullet {
+                    background-color: $app-overlay-page-title-breadcrumb-bullet-color !important;
+                }
+            }
+        } 
+
+        .app-header {
+            padding-bottom: 60px;
+        }
+
+        .app-main {
+            margin-top: -100px;    
+        }
+    }
+
+    // Tablet & mobile modes
+    @include media-breakpoint-down(lg) {
+        .app-header {
+            .page-title {
+                display: none !important;    
+            }    
+        }
+    }
+}

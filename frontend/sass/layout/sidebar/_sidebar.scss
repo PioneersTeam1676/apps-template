@@ -1,0 +1,85 @@
+//
+// Sidebar
+//
+
+[data-kt-app-layout="light-sidebar"],
+[data-kt-app-layout="dark-sidebar"] {
+    .app-sidebar-menu {
+        .menu {
+            > .menu-item {
+                > .menu-link {
+                    margin-top: 0.4rem;
+                    margin-bottom: 0.4rem;
+
+                    .menu-title {
+                        font-size: 1.15rem;                             
+                    }       
+                }
+            }
+
+            .menu-item {            
+                .menu-link {
+                    padding-top: 0.775rem;
+                    padding-bottom: 0.775rem;           
+                    border-radius: $border-radius;       
+                }
+
+                .menu-icon {
+                    justify-content: flex-start;
+                    margin-right: 0;
+                }
+            } 
+        }    
+
+        &.app-sidebar-menu-arrow {
+            .menu {
+                > .menu-item {
+                    > .menu-link {
+                        > .menu-icon {
+                            .svg-icon {
+                                @include menu-link-arrow-rotate(0, -180deg);
+                            }						
+                        }    
+                    }
+
+                    &.menu-accordion {
+                        &.show,
+                        &.showing {
+                            > .menu-link {
+                                > .menu-icon {
+                                    .svg-icon {
+                                        @include menu-link-arrow-rotate(90deg, -90deg);
+                                    }						
+                                }
+                            }
+                        }
+
+                        &.hiding {
+                            > .menu-link {
+                                > .menu-icon {
+                                    .svg-icon {
+                                        @include menu-link-arrow-rotate(0, -180deg);
+                                    }						
+                                }
+                            }
+                        }	
+                    }
+                }	
+            }
+        }
+    } 
+
+    .app-sidebar-logo {
+        height: var(--kt-app-header-height); 
+    }
+
+    .app-sidebar-logo {
+        .btn-icon-custom-color {
+            &:hover {
+                svg {
+                    color: var(--kt-app-sidebar-logo-icon-custom-hover-color);
+                }
+            }
+        }
+    }
+}

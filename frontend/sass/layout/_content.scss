@@ -1,0 +1,25 @@
+//
+// Content
+//
+
+.app-content {
+    padding-bottom: 0;
+
+    // Desktop mode
+    @include media-breakpoint-up(lg) {
+        [data-kt-app-layout="light-sidebar"]:not([data-kt-app-header-fixed="true"]) &,
+        [data-kt-app-layout="dark-sidebar"]:not([data-kt-app-header-fixed="true"]) &,
+        [data-kt-app-layout="mini-sidebar"]:not([data-kt-app-header-fixed="true"]) & {
+            padding-top: 0;         
+        }        
+    }
+
+    // Tablet & mobile modes
+    @include media-breakpoint-down(lg) {
+        [data-kt-app-layout="light-sidebar"]:not([data-kt-app-header-fixed-mobile="true"]) &,
+        [data-kt-app-layout="dark-sidebar"]:not([data-kt-app-header-fixed-mobile="true"]) &,
+        [data-kt-app-layout="mini-sidebar"]:not([data-kt-app-header-fixed-mobile="true"]) & {
+            padding-top: 0;         
+        }
+    }
+}

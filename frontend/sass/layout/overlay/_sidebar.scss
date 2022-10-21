@@ -1,0 +1,73 @@
+//
+// Sidebar
+//
+
+[data-kt-app-layout="overlay"] {
+    --kt-app-sidebar-width: 140px;
+
+    .app-sidebar {
+        background-color: var(--kt-app-overlay-sidebar-bg-color);
+        box-shadow: 10px 0px 50px var(--kt-app-overlay-sidebar-menu-shadow-color);
+
+        .menu {
+            > .menu-item {
+                width: 100%;
+
+                @include menu-link-default-state( 
+                    $title-color: null,                     
+                    $icon-color: var(--kt-app-overlay-sidebar-menu-icon-color), 
+                    $bullet-color: null, 
+                    $arrow-color: null,                 
+                    $bg-color: null, 
+                    $all-links: true
+                );
+
+                @include menu-link-hover-state(   
+                    $title-color: null,                  
+                    $icon-color: $app-overlay-sidebar-menu-icon-color-active,
+                    $bullet-color: null, 
+                    $arrow-color: null,                      
+                    $bg-color: transparent, 
+                    $all-links: true
+                );
+
+                @include menu-link-here-state( 
+                    $title-color: null,                  
+                    $icon-color: $app-overlay-sidebar-menu-icon-color-active,   
+                    $bullet-color: null, 
+                    $arrow-color: null,                   
+                    $bg-color: var(--kt-app-overlay-sidebar-menu-link-bg-color) !important, 
+                    $all-links: true
+                );
+
+                @include menu-link-show-state(  
+                    $title-color: null,                    
+                    $icon-color: $app-overlay-sidebar-menu-icon-color-active,
+                    $bullet-color: null, 
+                    $arrow-color: null,                      
+                    $bg-color: transparent, 
+                    $all-links: true
+                );
+
+                @include menu-link-active-state( 
+                    $title-color: null,                  
+                    $icon-color: $app-overlay-sidebar-menu-icon-color-active,   
+                    $bullet-color: null, 
+                    $arrow-color: null,                 
+                    $bg-color: var(--kt-app-overlay-sidebar-menu-link-bg-color) !important, 
+                    $all-links: true
+                );
+            }             
+            
+            > .menu-item {
+                > .menu-link {                    
+                    @include border-radius($border-radius);
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+        }
+    }
+}

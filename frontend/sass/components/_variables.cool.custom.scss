@@ -1,0 +1,106 @@
+//
+// To make future updates easier consider overriding the global variables from _variables.bootstrap.scss and _variables.custom.scss for current demo in this file.
+// Note that this file is included first and variables defined in _variables.bootstrap.scss and _variables.custom.scss
+// are not accessible in this file but you can override any global variable as shown below:
+//
+
+// Bootstrap base colors
+$white:    											#ffffff;
+$gray-100: 										    #F5F8FA;
+$gray-200: 										    #EFF2F5;
+$gray-300: 										    #E4E6EF;
+$gray-400: 										    #B5B5C3;
+$gray-500: 										    #A1A5B7;
+$gray-600: 										    #7E8299;
+$gray-700: 										    #5E6278;
+$gray-800: 										    #3F4254;
+$gray-900: 										    #181C32;
+
+$gray-100-dark: 									#1b1b29;
+$gray-200-dark: 									#2B2B40;
+$gray-300-dark: 									#323248;
+$gray-400-dark: 									#474761;
+$gray-500-dark: 									#565674;
+$gray-600-dark: 									#6D6D80;
+$gray-700-dark: 									#92929F;
+$gray-800-dark: 									#CDCDDE;
+$gray-900-dark: 									#FFFFFF;
+
+// Theme colors
+// Primary
+$primary:       									#4FC9DA;
+$primary-active:    								#30A6B6;
+$primary-light:    									#DDF8FC;
+$primary-light-dark:								#2D3749;
+$primary-inverse:  									#FFFFFF;
+
+// Success
+$success:       									#B8D935;
+$success-active:    								#9FBE22;
+$success-light:    								    #F4FBDB;
+$success-light-dark:							    #2D3E35;
+$success-inverse:  									#FFFFFF;
+
+// Info
+$info:       									    #4F55DA;
+$info-active:    									#383EBC;
+$info-light:    									#EFF0FF;
+$info-light-dark: 									#382F59;
+$info-inverse:  									#FFFFFF;
+
+// Danger
+$danger:       									    #F06445;
+$danger-active:    									#DB5437;
+$danger-light:    									#FFF0ED;
+$danger-light-dark:									#452E36;
+$danger-inverse:  									#FFFFFF;
+
+// Warning
+$warning:       									#E8C444;
+$warning-active:    								#CFAB2A;
+$warning-light:    									#FDF4D6;
+$warning-light-dark:								#3F3A2B;
+$warning-inverse:  									#FFFFFF;
+
+// Border radiues
+$border-radius:               						0.95rem;
+$border-radius-sm:            						.475rem;
+
+// Body
+$body-bg:                                           $white;
+$body-bg-dark:                                      #1E1E2D;
+
+// Border
+$border-dashed-color:                               $gray-300;  // Custom variable
+$border-dashed-color-dark:                          $gray-300-dark;  // Custom variable
+$border-color:                                      $gray-200;  // Custom variable
+$border-color-dark:                                 $gray-200-dark;  // Custom variable
+
+// Card
+$card-border-color:                                 $border-dashed-color;
+$card-border-color-dark:                            $border-dashed-color-dark;
+$card-box-shadow:                                   none;
+$card-box-shadow-dark:                              none;
+$card-border-enabled:                               true;
+$card-border-style:                                 dashed;
+$card-border-radius:                                $border-radius;
+$card-bg:                                           $body-bg;
+$card-bg-dark:                                      $body-bg-dark;
+
+// Accordion
+$accordion-border-radius:                           $border-radius;
+
+// Button
+$btn-border-radius-sm:                              $border-radius;
+
+// Accordion
+$accordion-border-radius:                           $card-border-radius;
+
+// Modals
+$modal-content-border-radius:                       $card-border-radius;
+
+// Badge
+$badge-border-radius:                               $border-radius-sm;
+
+// Form
+$input-btn-font-size:                               1rem;

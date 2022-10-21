@@ -1,0 +1,87 @@
+//
+// Header
+//
+
+[data-kt-app-layout="light-sidebar"],
+[data-kt-app-layout="dark-sidebar"] {
+    .header-search {
+        form {
+            .svg-icon {
+                color: var(--kt-app-light-sidebar-header-search-icon-color);
+            }
+
+            > .form-control {
+                color: var(--kt-app-light-sidebar-header-search-input-color);
+                border: 1px solid var(--kt-app-light-sidebar-header-search-input-border-color);
+                background-color: transparent;
+                @include placeholder(var(--kt-app-light-sidebar-header-search-input-placeholder-color));
+            }
+        }
+    }
+
+    .app-navbar {
+        .btn.btn-custom {
+            @include button-custom-variant(
+                $color: var(--kt-app-light-sidebar-header-navbar-btn-custom-color), 
+                $icon-color: var(--kt-app-light-sidebar-header-navbar-btn-custom-icon-color), 
+                $border-color: var(--kt-app-light-sidebar-header-navbar-btn-custom-border-color),
+                $bg-color: transparent,
+
+                $color-active: var(--kt-primary), 
+                $icon-color-active: var(--kt-primary),  
+                $border-color-active: null, 
+                $bg-color-active: null
+            );
+        } 
+    }   
+
+    // Desktop mode
+    @include media-breakpoint-up(lg) {
+        &[data-kt-app-toolbar-enabled="true"] {
+            .app-toolbar {
+                border-top: 1px dashed var(--kt-app-header-base-border-when-toolbar-enabled);
+            }    
+        }
+
+        &[data-kt-app-toolbar-enabled="true"][data-kt-app-toolbar-sticky="on"] {
+            .app-toolbar {
+                border-top-color: transparent;
+            }    
+        }
+
+        &[data-kt-app-header-fixed="true"] {
+            .app-header {
+                background-color: var(--kt-body-bg);    
+                box-shadow: var(--kt-box-shadow-sm);
+            }    
+        }
+    }
+
+    // Tablet & mobile modes
+    @include media-breakpoint-down(lg) {
+        .app-header {
+            .page-title {
+                display: none !important;    
+            }    
+        }
+
+        &[data-kt-app-toolbar-enabled="true"] {
+            .page-title {
+                padding-left: $app-container-padding-x-mobile;
+                padding-right: $app-container-padding-x-mobile;
+                margin-bottom: $app-content-padding-y-mobile;
+            }  
+
+            .app-toolbar {
+                margin-bottom: $app-content-padding-y-mobile;
+            }    
+        }
+
+        &[data-kt-app-header-fixed-mobile="true"] {
+            .app-header {
+                background-color: var(--kt-body-bg);    
+                box-shadow: var(--kt-box-shadow-sm);
+            }    
+        }
+    }    
+}
