@@ -1,0 +1,4 @@
+node_modules
+backend/config/db.config.js
+public/assets/**
+public/build/**
