@@ -1,0 +1,24 @@
+<main>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>404</title>
+
+		<link type="text/css" rel="stylesheet" href="error.css" />
+
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:700,900" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="notfound">
+			<!-- <div class="notfound-404"> -->
+				<h1>404</h1>
+			<!-- </div> -->
+			<h2 class="">The file you're trying to access doesn't exist!</h2>
+		</div>
+	</body>
+	<!-- This templates was made by Colorlib (https://colorlib.com) -->
+</main>
